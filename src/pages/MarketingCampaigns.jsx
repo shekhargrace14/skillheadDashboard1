@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
 
 const MarketingCampaigns = () =>{
     return(
         <>
+
             MarketingCampaigns
         </>
     )

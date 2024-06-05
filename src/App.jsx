@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import DashBoard from "./pages/DashBoard";
@@ -11,6 +11,7 @@ import ManageEmails from "./pages/ManageEmails";
 import MarketingCampaigns from "./pages/MarketingCampaigns";
 import Discussions from "./pages/Discussions";
 import ManageNotifications from "./pages/ManageNotifications";
+import Login from "./pages/Login";
 // Import other page components as needed
 
 const App = () => {
@@ -18,8 +19,7 @@ const App = () => {
     <Router>
     <div className="flex justify-between">
 
-      <Navbar className="h-screen">
-      </Navbar>
+      <Navbar className="h-screen"/>
         <Routes>
           <Route path="/" element={<DashBoard />} />
           <Route path="managerregistration" element={<ManagerRegistration />} />
@@ -31,6 +31,7 @@ const App = () => {
           <Route path="marketingcampaigns" element={<MarketingCampaigns />} />
           <Route path="discussions" element={<Discussions />} />
           <Route path="managenotifications" element={<ManageNotifications />} />
+          <Route path="login" element={<Login />} />
         </Routes>
     </div>
       

@@ -1,6 +1,8 @@
+
 const ManagerRegistration = () => {
     return(
         <>
+
             ManagerRegistration
         </>
     )
