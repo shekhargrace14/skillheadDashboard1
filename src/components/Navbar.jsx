@@ -1,5 +1,5 @@
-import { FaBars, FaClosedCaptioning, FaCross, FaEnvelope, FaEye, FaIdCardAlt, FaListAlt, FaPencilAlt, FaTh, FaTimes } from 'react-icons/fa';
-import logo from '../assets/images/logo.png';
+import { FaBars, FaChevronCircleLeft, FaChevronCircleRight, FaClosedCaptioning, FaCross, FaEnvelope, FaEye, FaIdCardAlt, FaListAlt, FaPencilAlt, FaTh, FaTimes } from 'react-icons/fa';
+import logo from '../assets/images/logo-brain.png';
 import { Link } from 'react-router-dom';
 import { FaChartSimple, FaMessage } from 'react-icons/fa6';
 import { BiSolidFaceMask } from 'react-icons/bi';
@@ -10,8 +10,8 @@ import { useState } from 'react';
 // import { Children } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen]=useState(false)
-    const toggle=()=>{
+    const [isOpen, setIsOpen] = useState(false)
+    const toggle = () => {
         setIsOpen(!isOpen)
     }
     const menu = [
@@ -65,42 +65,37 @@ const Navbar = () => {
             path: "managenotifications",
             name: "Manage Notifications",
             icon: <IoNotificationsSharp />,
-            
+
 
         },
     ];
 
     return (
-        <section className={`navbar bg-gray-100 pl-4 py-4 h-screen  transition ease-in-out ${isOpen ? "w-[300px]" : "w-[75px]"} `}>
-            <div className="row  flex items-center justify-center pr-4">
-                <div className="column">
-                    <img className={`${isOpen ? "logo w-[25%]":"hidden"}`} src={logo} alt="Logo" />
+        <section className="navbar relative bg-white  h-screen  transition ease-in-out rounded-r-2xl w-[80px] transition ease-in-out3. delay-150 ">
+            <div className={`absolute bg-white h-screen ${isOpen ? "w-[280px]" : "w-[80px] "}  text-center`}>         
+                <div className="row ">
+                    <div className="column  flex flex-col justify-center pl-3 ">
+                        <img className="w-[50px] pt-3 pl-3 my-2" src={logo} alt="Logo" />
+                        <button className=' relative  py-3 pl-4' onClick={toggle}>
+                            <span className={`${isOpen ? "absolute" : "static"} top-0 right-[-10px] text-xl z-10`}>
+                                <FaChevronCircleLeft/>
+                            </span>
+                        </button>
+                        <ul className='menu '>
+                            {menu.map((item, index) => (
+                                <li key={index} className=' py-3 pl-4 hover:bg-[#f6f8fa]  rounded-l-lg cursor-pointer'>
+                                    <Link to={item.path} className='flex items-center gap-4  transition ease-in-out3. delay-150'>
+                                        <div className='text-lg '>{item.icon}</div>
+                                        <div className={` leading-none ${isOpen ? "text-md" : "hidden"}`}>{item.name}</div>
+                                        {/* <div>{item.name}</div> */}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                <div className="column">
-                    <button onClick={toggle}>
-                        {
-                            isOpen ?  <FaTimes className='text-lg' /> :<FaBars className='text-xl pl-1'/>
-                        }
-                    </button>
-                </div>
-                
             </div>
 
-            <div className="row">
-                <div className="column">
-                    <ul className='menu'>
-                        {menu.map((item, index) => (
-                            <li key={index} className=' pl-'>
-                                <Link to={item.path} className='flex items-center pl-4 py-3 my-2 gap-4 hover:bg-white transition ease-in-out3. delay-150 rounded-l-lg'>
-                                    <div className='text-lg '>{item.icon}</div>
-                                    <div className={` leading-none ${isOpen ? "text-lg" : "hidden"}`}>{item.name}</div>
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-            
         </section>
     );
 };
