@@ -1,17 +1,17 @@
 [
     {
         "title": "Demographics",
-        "image":"../public/assets/images/demographics_data.webp",
+        "image":"../../public/assets/images/demographics_data.webp",
         "description":"Track placed and unplaced students in each branch for seamless placement insights."
     },
     {
         "title": "Domain",
-        "image":"../public/assets/images/domain_data.webp",
+        "image":"../../public/assets/images/domain_data.webp",
         "description":"Track placed and unplaced students in each branch for seamless placement insights."
     },
     {
         "title": "gender",
-        "image":"../public/assets/images/gender_data.webp",
+        "image":"../../public/assets/images/gender_data.webp",
         "description":"Track placed and unplaced students in each branch for seamless placement insights."
     }
 
