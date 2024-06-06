@@ -1,5 +1,5 @@
-import { FaBars, FaChevronCircleLeft, FaChevronCircleRight, FaClosedCaptioning, FaCross, FaEnvelope, FaEye, FaIdCardAlt, FaListAlt, FaPencilAlt, FaTh, FaTimes } from 'react-icons/fa';
-import logo from '../assets/images/logo-brain.png';
+import {  FaChevronCircleLeft, FaChevronCircleRight, FaEnvelope, FaEye, FaIdCardAlt, FaListAlt, FaPencilAlt, FaTh } from 'react-icons/fa';
+import logo from '../public/assets/images/logo-brain.png';
 import { Link } from 'react-router-dom';
 import { FaChartSimple, FaMessage } from 'react-icons/fa6';
 import { BiSolidFaceMask } from 'react-icons/bi';
