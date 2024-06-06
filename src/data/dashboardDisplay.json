@@ -64,6 +64,28 @@
         "description" : "Track placed and unplaced students in each branch for seamless placement insights.",
         "bgColor" : "#fff5d8"
 
+    },
+    {
+        "title":"Rating / Reviews",
+        "icon1":"<FaListAlt />",
+        "icon2":"<FaListAlt />",
+        "count":"48",
+        "number":"0",
+        "image" :"../assets/images/demographics_data.webp",
+        "description" : "Track placed and unplaced students in each branch for seamless placement insights.",
+        "bgColor" : "#fce8ef"
+
+    },
+    {
+        "title":"Payments",
+        "icon1":"<FaListAlt />",
+        "icon2":"<FaListAlt />",
+        "count":"222",
+        "number":"0",
+        "image" :"../assets/images/demographics_data.webp",
+        "description" : "Track placed and unplaced students in each branch for seamless placement insights.",
+        "bgColor" : "#fff5d8"
+
     }
 
 ]

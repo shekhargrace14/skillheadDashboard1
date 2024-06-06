@@ -78,7 +78,7 @@ const Navbar = () => {
                         <img className="w-[50px] pt-3 pl-3 my-2" src={logo} alt="Logo" />
                         <button className=' relative  py-3 pl-4' onClick={toggle}>
                             <span className={`${isOpen ? "absolute" : "static"} top-0 right-[-10px] text-xl z-10`}>
-                                <FaChevronCircleLeft/>
+                                {isOpen ? <FaChevronCircleLeft/> : <FaChevronCircleRight/>}
                             </span>
                         </button>
                         <ul className='menu '>
