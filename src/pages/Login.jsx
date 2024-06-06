@@ -1,5 +1,5 @@
 import React from 'react'
-import loginImage from "../assets/images/login-img-6.webp"
+import loginImage from "../../public/assets/images/login-img-6.webp"
 const login = () => {
   return (
     <div className='container mx-auto'>
