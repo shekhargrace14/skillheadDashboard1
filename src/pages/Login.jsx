@@ -1,4 +1,4 @@
-import React from 'react'
+
 import loginImage from "../../public/assets/images/login-img-6.webp"
 const login = () => {
   return (
