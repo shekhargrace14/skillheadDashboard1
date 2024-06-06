@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 
 import dashboardDisplay from "../data/dashboardDisplay.json"
 import dashboardReportJSON from "../data/dashboardReport.json"
-import { FaBell, FaEye, FaListAlt, FaUser } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
+import {  FaListAlt, } from "react-icons/fa";
 import Topbar from "../components/Topbar";
 const DashBoard = () => {
     const [dashboardData, setDashboardData] = useState([])
