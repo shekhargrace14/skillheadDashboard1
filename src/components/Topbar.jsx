@@ -3,9 +3,9 @@ import { FaMessage } from "react-icons/fa6"
 
 const Topbar = ()=>{
     return(
-        <div className="row bg-white flex justify-between items-center p-4 ">
+        <div className="row bg-white flex justify-between items-center p-4 shadow">
             <div className="column">
-                <button className="sm:flex justify-between items-center gap-2 rounded-full px-4 py-2 rounded-full border-2 border-black hidden"><FaEye/> Preview</button>
+                <button className="sm:flex justify-between items-center gap-2 rounded-full px-4 py-2 rounded-full border-[1px] border-gray-400 hidden"><FaEye/> Preview</button>
             </div>
             <div className="column sm:block hidden">
                 <p>Opportunity Dashboard | test</p>

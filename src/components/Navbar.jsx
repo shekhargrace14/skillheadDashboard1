@@ -6,6 +6,8 @@ import { BiSolidFaceMask } from 'react-icons/bi';
 
 import { IoNotificationsSharp } from 'react-icons/io5';
 import { useState } from 'react';
+import { HiMiniCodeBracket } from 'react-icons/hi2';
+import { PiBracketsAngleBold } from 'react-icons/pi';
 
 // import { Children } from 'react';
 
@@ -19,6 +21,11 @@ const Navbar = () => {
             path: "/",
             name: "Dashboard",
             icon: <FaTh />,
+        },
+        {
+            path: "coding",
+            name: "Coding",
+            icon: <PiBracketsAngleBold />,
         },
         {
             path: "managerregistration",

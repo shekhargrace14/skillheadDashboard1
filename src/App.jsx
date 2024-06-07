@@ -12,6 +12,7 @@ import MarketingCampaigns from "./pages/MarketingCampaigns";
 import Discussions from "./pages/Discussions";
 import ManageNotifications from "./pages/ManageNotifications";
 import Login from "./pages/Login";
+import Coding from "./pages/Coding";
 // Import other page components as needed
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="marketingcampaigns" element={<MarketingCampaigns />} />
           <Route path="discussions" element={<Discussions />} />
           <Route path="managenotifications" element={<ManageNotifications />} />
+          <Route path="coding" element={<Coding />} />
           <Route path="login" element={<Login />} />
         </Routes>
     </div>
